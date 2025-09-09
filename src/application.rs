@@ -132,10 +132,7 @@ fn catch_all(path: std::path::PathBuf, state: &State<AppState>) -> Template {
     let registry = state.registry.clone();
     let engine = state.engine.clone();
     if let Some(capsule) = registry.get(&path).cloned() {
-        let ctx = engine.context_for(&capsule);
-        // The template name is capsule.template (e.g., "home", "about", ...),
-        // Rocket's Template will resolve against loaded files.
-        Template::render(capsule.template, ctx)
+        render_capsule(&capsule, engine.as_ref())
     } else {
         Template::render("404", context! { path })
     }
@@ -205,7 +202,7 @@ impl HttpServer for RocketTeraServer {
                     }
                 }))
                 // You can mount once at "/" and let `catch_all` dispatch
-                .mount("/", routes![catch_all, not_found])
+                .mount("/", routes![catch_all, handle_post, not_found])
                 .register("/", catchers![default_catcher]);
 
             rocket
