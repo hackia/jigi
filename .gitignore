@@ -1,0 +1,27 @@
+# Rust compiled files
+/target/
+**/*.rs.bk
+
+# Cargo package files
+Cargo.lock
+
+# Backup files
+*.swp
+*.swo
+
+# IDE and editor files
+.idea/
+.vscode/
+*.iml
+
+# Byebug history
+.byebug_history
+
+# MacOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+
+# Other
+*.log
