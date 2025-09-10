@@ -1,6 +1,6 @@
 # jigi
 
-| Task   | Status                                                                                                                                    |
+| Branch | Status                                                                                                                                    |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Lint   | [![lint](https://github.com/hackia/jigi/actions/workflows/lint.yml/badge.svg)](https://github.com/hackia/jigi/actions/workflows/lint.yml) |
-| Test   | [![test](https://github.com/hackia/jigi/actions/workflows/test.yml/badge.svg)](https://github.com/hackia/jigi/actions/workflows/test.yml) |
+| Main   | [![main](https://github.com/hackia/jigi/actions/workflows/main.yml/badge.svg)](https://github.com/hackia/jigi/actions/workflows/main.yml) |
+| Dev    | [![dev](https://github.com/hackia/jigi/actions/workflows/dev.yml/badge.svg)](https://github.com/hackia/jigi/actions/workflows/dev.yml)    |
