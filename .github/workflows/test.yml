@@ -4,10 +4,10 @@ on:
     branches:
       - main
       - develop
-    pull_request:
-      branches:
-        - main
-        - develop
+  pull_request:
+    branches:
+      - main
+      - develop
 jobs:
   check-and-lint:
     runs-on: ubuntu-latest
