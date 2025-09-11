@@ -4,8 +4,6 @@ version = "0.1.0"
 edition = "2024"
 repository = "https://github.com/hackiado/gigi"
 authors = ["Seido <seido@hackiado.com>"]
-keywords = ["blog", "static site generator", "markdown", "rust"]
-description = "A static site generator for blogs, powered by Rust."
 license = "AGPL-3.0"
 readme = "README.md"
 
@@ -30,7 +28,7 @@ reqwest = { version = "0.12.23", features = ["json", "blocking", "rustls-tls"] }
 inquire = { version = "0.7.5", features = ["console", "date", "editor"] }
 crossterm = "0.29.0"
 tabled = "0.20.0"
-clap = "4.5.47"
+clap = { version = "4.5.47", features = ["derive"] }
 ignore = "0.4.23"
 toml = "0.9.5"
 notify = "8.2.0"
@@ -42,4 +40,5 @@ num_cpus = "1.17.0"
 tokio = { version = "1.47.1", features = ["full"] }
 parking_lot = "0.12"
 globwalk = "0.9"
+fake = "4.4.0"
 

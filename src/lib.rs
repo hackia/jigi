@@ -4,8 +4,5 @@ pub mod helpers;
 pub mod seo;
 #[doc = include_str!("../Application.md")]
 pub mod application;
-
-
-fn main() {
-    println!("Hello, world!");
-}
+#[doc = include_str!("../Capsule.md")]
+pub mod capsules;
